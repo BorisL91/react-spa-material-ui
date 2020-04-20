@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography"
 import Box from "@material-ui/core/Box"
 
 import Emojis from "../components/Emoji/EmojiApp"
+import Recipes from "../components/Recipe/RecipeMain"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props
@@ -73,7 +74,7 @@ export default function FullWidthTabs() {
           aria-label='full width tabs example'
         >
           <Tab label='Emoji Search' {...a11yProps(0)} />
-          <Tab label='Item Two' {...a11yProps(1)} />
+          <Tab label='Recipe Search' {...a11yProps(1)} />
           <Tab label='Item Three' {...a11yProps(2)} />
           <Tab label='Item Four' {...a11yProps(3)} />
         </Tabs>
@@ -87,7 +88,7 @@ export default function FullWidthTabs() {
           <Emojis />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
+          <Recipes />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
           Item Three
