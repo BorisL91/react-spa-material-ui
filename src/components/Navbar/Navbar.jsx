@@ -46,7 +46,6 @@ export default function FullWidthTabs() {
           <Tab label='Emoji Search' {...a11yProps(0)} />
           <Tab label='Recipe Search' {...a11yProps(1)} />
           <Tab label='Video Search' {...a11yProps(2)} />
-          <Tab label='Item Four' {...a11yProps(3)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -62,9 +61,6 @@ export default function FullWidthTabs() {
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
           <VideoMain />
-        </TabPanel>
-        <TabPanel value={value} index={3} dir={theme.direction}>
-          Item Four
         </TabPanel>
       </SwipeableViews>
     </div>
