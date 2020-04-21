@@ -12,8 +12,8 @@ const EmojiResultsRow = ({ symbol, title }) => {
       data-clipboard-text={symbol}
     >
       <img alt={title} src={src} />
-      <span className='title'>{title}</span>
-      <span className='info'>Click to copy emoji</span>
+      <span className='emoji-title'>{title}</span>
+      <span className='emoji-info'>Click to copy emoji</span>
     </div>
   )
 }

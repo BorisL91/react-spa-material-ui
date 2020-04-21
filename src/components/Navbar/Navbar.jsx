@@ -10,6 +10,7 @@ import Tab from "@material-ui/core/Tab"
 
 import Emojis from "../../components/Emoji/EmojiApp"
 import Recipes from "../../components/Recipe/RecipeMain"
+import VideoMain from "../VideoSearch/components/VideoMain"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,7 +45,7 @@ export default function FullWidthTabs() {
         >
           <Tab label='Emoji Search' {...a11yProps(0)} />
           <Tab label='Recipe Search' {...a11yProps(1)} />
-          <Tab label='Item Three' {...a11yProps(2)} />
+          <Tab label='Video Search' {...a11yProps(2)} />
           <Tab label='Item Four' {...a11yProps(3)} />
         </Tabs>
       </AppBar>
@@ -60,7 +61,7 @@ export default function FullWidthTabs() {
           <Recipes />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          <VideoMain />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
           Item Four
