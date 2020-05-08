@@ -8,7 +8,6 @@ const SearchBar = ({ onFormSubmit }) => {
     e.preventDefault()
     onFormSubmit(search)
     setSearch("")
-    console.log("Form submitted")
   }
 
   return (
